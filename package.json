@@ -1,0 +1,50 @@
+{
+  "name": "ngx-croppie-example",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "build-prod": "ng build --prod --base-href \"https://deej81.github.io/ngx-croppie-example/\""
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/common": "*",
+    "@angular/compiler": "*",
+    "@angular/core": "*",
+    "@angular/forms": "*",
+    "@angular/http": "*",
+    "@angular/platform-browser": "*",
+    "@angular/platform-browser-dynamic": "*",
+    "@angular/router": "*",
+    "core-js": "*",
+    "croppie": "2.6.2",
+    "ngx-croppie": "^1.0.0",
+    "rxjs": "*",
+    "zone.js": "*"
+  },
+  "devDependencies": {
+    "@angular/cli": "*",
+    "@angular/compiler-cli": "*",
+    "@types/croppie": "^2.5.2",
+    "@types/jasmine": "*",
+    "@types/node": "^6.0.60",
+    "codelyzer": "*",
+    "jasmine-core": "*",
+    "jasmine-spec-reporter": "*",
+    "karma": "*",
+    "karma-chrome-launcher": "*",
+    "karma-cli": "*",
+    "karma-coverage-istanbul-reporter": "*",
+    "karma-jasmine": "*",
+    "karma-jasmine-html-reporter": "*",
+    "protractor": "*",
+    "ts-node": "*",
+    "tslint": "*",
+    "typescript": "*"
+  }
+}

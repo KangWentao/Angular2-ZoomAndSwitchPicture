@@ -1,0 +1,29 @@
+<h1>
+  {{title}}
+</h1>
+<div>
+  <!-- <img [src]="imageToDisplay" alt="" /> -->
+</div>
+
+<div>
+  <button (click)="prev()">prev</button>
+  <ngx-croppie *ngIf="croppieImage" #ngxCroppie [croppieOptions]="croppieOptions" [imageUrl]="croppieImage" (result)="newImageResultFromCroppie($event)"></ngx-croppie>
+  <button (click)="next()">next</button>
+</div>
+<div>
+  <input type="file" id="fileupload" #imageUpload (change)="imageUploadEvent($event)" accept="image/gif, image/jpeg, image/png" multiple/>
+  <button type="button" class="btn btn-default" data-dismiss="modal" (click)="cancelCroppieEdit()">Cancel</button>
+  <!-- <button type="button" class="btn btn-primary" (click)="saveImageFromCroppie()">Save</button> -->
+
+</div>
+<div>
+    <table>
+        <tr>
+          <th>FileList</th>
+        </tr>
+        <tr *ngFor="let file of files">
+          <td>{{file.name}}<button (click)="showfile(file)">change</button></td>
+        </tr>
+      </table>
+
+</div>
